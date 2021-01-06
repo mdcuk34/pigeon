@@ -648,7 +648,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.4"
 
-"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.0.0", "@babel/runtime@^7.12.1", "@babel/runtime@^7.12.5", "@babel/runtime@^7.8.4":
   version "7.12.5"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.12.5.tgz#410e7e487441e1b360c29be715d870d9b985882e"
   integrity sha512-plcc+hbExy3McchJCEQG3knOsuh3HH+Prx1P6cLIkET/0dLuQDEnrT+s27Axgc9bqfsmNUNHfscgMUdBpC9xfg==
@@ -1115,6 +1115,14 @@
     redux "^4.0.0"
     redux-thunk "^2.3.0"
     reselect "^4.0.0"
+
+"@rtk-incubator/rtk-query@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@rtk-incubator/rtk-query/-/rtk-query-0.2.0.tgz#ec7cfb90e44268eb70ac8df6a7eb7208c315fed1"
+  integrity sha512-XuxYLHk7LS65I0gwXITS8B2MMzL2qOobr6Kj7TGLQcjHktKlL2JZ1Y871D9ikBHvTwKqpROPOXlBcL035XO9sg==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    immer ">=8.0.0"
 
 "@sinonjs/commons@^1.7.0":
   version "1.8.1"
@@ -3358,7 +3366,7 @@ image-size@^0.6.0:
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
   integrity sha512-47xSUiQioGaB96nqtp5/q55m0aBQSQdyIloMOc/x+QVTDZLNmXE892IIDrJ0hM1A5vcNUDD5tDffkSP5lCaIIA==
 
-immer@^8.0.0:
+immer@>=8.0.0, immer@^8.0.0:
   version "8.0.0"
   resolved "https://registry.yarnpkg.com/immer/-/immer-8.0.0.tgz#08763549ba9dd7d5e2eb4bec504a8315bd9440c2"
   integrity sha512-jm87NNBAIG4fHwouilCHIecFXp5rMGkiFrAuhVO685UnMAlOneEAnOyzPt8OnP47TC11q/E7vpzZe0WvwepFTg==
@@ -6727,10 +6735,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.8.3:
-  version "3.9.7"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
-  integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
+typescript@^4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
+  integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
 
 ua-parser-js@^0.7.18:
   version "0.7.23"
