@@ -7,8 +7,14 @@ import {api} from '../api';
 
 const store = configureStore({
   reducer: rootReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(api.middleware),
+  middleware: (getDefaultMiddleware) => {
+    const middleware = getDefaultMiddleware().concat(api.middleware);
+    if (__DEV__) {
+      const {logger} = require('redux-logger');
+      return middleware.concat(logger);
+    }
+    return middleware;
+  },
 });
 
 type AppDispatch = typeof store.dispatch;
