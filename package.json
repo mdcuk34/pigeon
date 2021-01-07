@@ -10,8 +10,10 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "react": "16.13.1",
     "react-native": "0.63.3",
+    "react-native-url-polyfill": "^1.2.0",
     "react-query": "^3.5.11"
   },
   "devDependencies": {

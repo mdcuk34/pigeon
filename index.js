@@ -1,7 +1,7 @@
 /**
  * @format
  */
-
+import 'react-native-url-polyfill/auto';
 import {AppRegistry} from 'react-native';
 import {Entry} from './src';
 import {name as appName} from './app.json';
