@@ -1,6 +1,12 @@
 // @ts-nocheck
 // Note: Had to modify the baseQuery headers and getCharges params to make this work.
 
+/*
+    This file has been generated with:
+    curl -o test.json https://raw.githubusercontent.com/stripe/openapi/master/openapi/spec3.json
+    npx @rtk-incubator/rtk-query-codegen-openapi test.json > stripe.
+ */
+
 import { createApi, fetchBaseQuery } from "@rtk-incubator/rtk-query";
 export const api = createApi({
     reducerPath: 'stripeApi',
