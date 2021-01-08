@@ -11,8 +11,10 @@ import {useQuery} from 'react-query';
 
 declare const global: {HermesInternal: null | {}};
 
+const CHARGES_QUERY_KEY = 'charges';
+
 const App = () => {
-  const {isLoading, isError, data} = useQuery('test', async () => {
+  const {isLoading, isError, data} = useQuery(CHARGES_QUERY_KEY, async () => {
     const charges = await api.getCharges();
     return charges();
   });
